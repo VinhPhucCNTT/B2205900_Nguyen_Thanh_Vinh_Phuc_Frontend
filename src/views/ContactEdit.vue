@@ -39,7 +39,6 @@ export default {
             }
         },
         async updateContact(data) {
-            console.log("Updating");
             try {
                 await ContactService.update(this.contact._id, data);
                 alert('Liên hệ được cập nhật thành công.');
